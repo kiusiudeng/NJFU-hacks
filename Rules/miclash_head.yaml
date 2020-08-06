@@ -1,13 +1,16 @@
+port: 7890
+socks-port: 7891
 redir-port: 7892
 allow-lan: true
 mode: Rule
+ipv6: false
 log-level: silent
 external-controller: 0.0.0.0:9999
 dns:
   enable: true
   ipv6: false
   listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - 114.114.114.114
