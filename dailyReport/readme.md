@@ -10,13 +10,20 @@
 
 ## Quick Start
 ```
-git clone https://github.com/kiusiudeng/NJFU-hacks.git
+git clone https://github.com/kiusiudeng/NJFU-hacks.git && cd dailyReport
 
-cd dailyReport
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+或
+```
+wget -O dailyReport.zip https://github.com/kiusiudeng/NJFU-hacks/releases/download/v1.0-beta/dailyReport.zip
+
+unzip dailyReport.zip && cd dailyReport
 
 pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 使用你喜欢的方式编辑 `main.py` ，输入 [uia系统](https://uia.njfu.edu.cn/authserver/login) 的账号密码。
+
 如果你愿意使用 `Server 酱` 进行消息推送，可以 [在此申请](http://sc.ftqq.com/?c=code) `sckey`并填入。留空禁用消息推送功能。
 ```
 python3 main.py
