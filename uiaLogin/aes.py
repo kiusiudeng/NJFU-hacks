@@ -6,7 +6,7 @@ import base64
 def rds(num):
     keymap = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678'
     result = ''
-    for i in repeat(None, num):
+    for num in repeat(None, num):
         result += keymap[random.randint(0, 47)]
     return result
 
