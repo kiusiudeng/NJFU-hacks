@@ -1,10 +1,22 @@
-# 准备工作
-1. 在 [PipeHub](https://www.pipehub.net/#/) 按首页指引，取得 `Callback URL` ，记下最后一段 Token 。
-2. 将学号、密码、预约时间、座位号以及上一步取得的 Token 填入脚本内。
+# 一点说明
 
-其中座位号可在此取得：
+## 座位号
 
 ![waXPqf.png](https://s1.ax1x.com/2020/09/12/waXPqf.png)
-3. 添加 CronTab 任务，如每天6:40执行预约：
 
-`40 6 * * * /home/booking.sh &>/dev/null 2>&1`
+## 添加 CronTab 任务
+
+如每天7:30执行预约：
+
+`30 7 * * * /home/booking.sh &>/dev/null 2>&1`
+
+`30 7 * * * /home/main.py &>/dev/null 2>&1`
+
+## 关于 Python 版
+
+1. 代码注释都写的很清楚了
+2. 请提前安装依赖：
+
+`pip3 install arrow`
+
+`pip3 install requests`
