@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "mp-grids": "weui-miniprogram/grids/grids",
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "mp-cell": "weui-miniprogram/cell/cell"
+  }
+}

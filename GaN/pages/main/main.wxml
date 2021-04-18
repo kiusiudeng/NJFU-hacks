@@ -1,0 +1,39 @@
+<view class="main">
+  <view class="user">
+    <view class="user-avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="user-text">
+      <view id="user-text-1" wx:if="{{userName}}">姓名：{{userName}}
+      </view>
+      <view id="user-text-1" wx:else>未获取到姓名
+      </view>
+      <view id="user-text-2" wx:if="{{userId}}">学号：{{userId}}
+      </view>
+      <view id="user-text-2" wx:else>未获取到学号
+      </view>
+      <view id="user-text-3" wx:if="{{dept}}">部门：{{dept}}
+      </view>
+      <view id="user-text-3" wx:else>未获取到部门
+      </view>
+      <view id="user-text-4" wx:if="{{score}}">信用：{{score}} / 600
+      </view>
+      <view id="user-text-4" wx:else>未获取到信用分数
+      </view>
+    </view>
+  </view>
+  <view class="divLine"></view>
+  <view class="detail">
+    当前预约
+    <view wx:for="{{rsvData}}">
+      No.{{index+1}} 座位：{{item.devName}} 时段：{{item.timeDesc}}
+    </view>
+  </view>
+  <view class="divLine"></view>
+  <view class="action">
+    <button type="primary" bindtap="scanQR" id="btn" class="btn1">扫描二维码</button>
+    <button type="primary" bindtap="checkout" id="btn" class="btn2">签退</button>
+    <button type="primary" bindtap="hold" id="btn" class="btn3">暂离 / 返回</button>
+    <button type="primary" bindtap="scanQR" id="btn" class="btn4">TODO</button>
+  </view>
+</view>
