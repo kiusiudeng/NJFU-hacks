@@ -6,9 +6,9 @@ surge_ruleset=REJECT,https://raw.githubusercontent.com/DivineEngine/Profiles/mas
 surge_ruleset=Select,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list
 surge_ruleset=Select,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
-surge_ruleset=China,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 # surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=Select,[]FINAL
 
 custom_proxy_group=Select`select`.*
-custom_proxy_group=NJFU`select`NJFU
+custom_proxy_group=NJFU`select`树莓派
