@@ -10,9 +10,11 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/DivineEngine/Profiles/mas
 # surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=Select,[]FINAL
 
-custom_proxy_group=Select`select`[]HK Fallback`.*
+custom_proxy_group=Select`select`[]HK`[]JP`[]Static
 custom_proxy_group=NJFU`select`[]NJFUX`[]DIRECT
-custom_proxy_group=HK Fallback`fallback`香港标准`http://www.gstatic.com/generate_204`180
+custom_proxy_group=HK`fallback`香港标准`http://www.gstatic.com/generate_204`180
+custom_proxy_group=JP`fallback`香港标准`http://www.gstatic.com/generate_204`180
+custom_proxy_group=Static`select`.*
 
 enable_rule_generator=true
 overwrite_original_rules=true
